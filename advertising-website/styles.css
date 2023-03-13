@@ -1,0 +1,233 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,100;1,800&family=Golos+Text:wght@400;900&family=Sono:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Golos Text', sans-serif;
+}
+/* This is classic main part for declare of size */
+.main{
+    width: 100%;
+    height: 100vh;
+}
+/*I like the create my own navbar instead of bootstrap. I add inset shadow , It seems really cool :) */
+.navbar{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    box-shadow: 5px 5px 50px black inset;
+}
+.logo{
+    width: 100px;
+    font-size: 30px;
+    margin-left: 50px;
+}
+.navbar > a{
+    text-decoration: none;
+    color:black;
+}
+.navbar > ul{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50px;
+
+}
+.navbar ul a{
+    text-decoration: none;
+    color: black;
+}
+/* I add hover effect with cubic-bezier. I like the play with it. */
+.navbar ul li a::after{
+    content: ' ';
+    width: 0%;
+    height: 2px;
+    background-color:black;
+    display: block;
+    transition: all 0.9s cubic-bezier(0.5,1.6,0.4,0.7);
+}
+.navbar ul li a:hover::after{
+    width: 100%;
+    height: 2px;
+    background-color:black;
+}
+.navbar ul li{
+    list-style: none;
+    margin: 20px;
+    font-size: 20px;
+}
+.content > h1{
+    font-family: 'Golos Text', sans-serif;
+    font-weight:800;
+    color: grey;
+    width: 300px;
+    margin-top: 400px;
+    margin-left: 7%;
+}
+.content{
+    border: 1px solid black;
+    height: 86.5vh;
+    background: url(images/background1.jpg);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+}
+/* I did the invisible communication part. When you click it, it responsively pops up on your screen. */
+#contact{
+    width: 60%;
+    height: 60%;
+    border: 1px solid white;
+    box-shadow: 5px 5px 50px white inset;
+    margin: auto;
+    margin-top: -35%;
+    visibility: hidden;
+}
+.form-label{
+    color: white;
+    margin-left: 40%;
+    margin-top: 20px;
+    font-size: 16px;
+}
+.button{
+    width: 150px;
+    height: 40px;
+    margin-left: 40%;
+    margin-top: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 5px 5px 50px white;
+    color: black;
+    background-color: white;
+}
+/* Also I like the create button by myself instead of bootstrap . This was most fun part for me! */
+button:hover{
+    scale: 1.2;
+    transition:all .2s linear;
+    color: white;
+    background-color: black;
+}
+
+/* "About" Section Stylesheet */
+
+.main2{
+    width: 100%;
+    height: 100vh;
+    background: url(images/aboutbg.jpg);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    overflow: auto;
+}
+/* I cahanged the color because of background. */
+.about-logo{
+    color: white;
+}
+.about{
+    font-family: 'Sono', sans-serif;
+    letter-spacing: 4px;
+    font-weight:900;
+    color: black;
+    width: 300px;
+    height: 600px;
+    float: right;
+    margin-right: 70px;
+    margin-top: 15px;
+}
+
+/* Art page stylesheet */
+/* This part was easiest part. I use responsive image from bootstrap*/
+.container-fluid{
+    background-color: black;
+    color: white;
+    height: 100%;
+}
+.row{
+    height: 30%;
+    width: 80%;
+}
+
+.image{
+    width: 200px;
+    height: 180px;
+}
+/* I wanted to add where did I get photos!! */
+footer{
+    height: 30px;
+    text-align: center;
+}
+footer > a{
+    color: black;
+}
+footer > a:hover{
+    color: red;
+}
+/* I add hover effect with opacity and scale.  */
+.img-thumbnail{
+    opacity: 0.5;
+}
+.img-thumbnail:hover{
+    opacity: 1;
+    cursor:default;
+    scale: 1.1;
+    transition: all .5s linear;
+}
+/* I use mediaQuery for responsivty. I like bootstrap but Bootstrap feels me limited.
+So it dosent take a lot of time. */
+
+@media (max-width:992px) and (min-width:768px) {
+    #contact{
+        margin-top: -49%;
+        width: 50%;
+    }
+    .content > h1{
+        margin-left: 7%;
+    }
+    .form-label{
+        margin-left:38%;
+    }
+    .button{
+        margin-left:40%;
+        width:100px;
+        height: 30px;
+    }
+    .about{
+        float: left;
+        margin-left: 10%;
+        color: white;
+    }
+}
+@media (min-width:993px) and (max-width:1200px) {
+    #contact{
+        margin-top: -40%;
+        width: 50%;
+    }
+    .button{
+        margin-left:38%;
+    }
+
+}
+@media (max-width:767px) {
+    #contact{
+        margin-top: -59%;
+        margin-left: 35%;
+    }
+    .button{
+        margin-left:40%;
+        width:100px;
+        height: 30px;
+    }
+    .about{
+        float: left;
+        margin-left: 10%;
+        color: white;
+    }
+}
+
+/* This project takes 6 hours. This is my one of my favorite projects.I am looking for a job as a junior.
+I am open to learn everything about this field.Please try to reach me.My first target is learning
+NOT MAKING MONEY!!! I leared everything by myself.I still have a lot of job to do.
+ Thank you for your time
+ Shaggy
+*/

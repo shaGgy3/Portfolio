@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Genos:ital,wght@0,100,800;1,800&family=Golos+Text:wght@400;900&family=Sono:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container-fluid{
+    height: 300vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(images/bg1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    background-attachment: fixed;
+}
+.nameSec{
+    position: absolute;
+    top: 22%;
+    width: 100%;
+    height: 13%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkgrey;
+    border: 2px solid red;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    box-shadow: 5px 5px 50px white;
+}
+.nameSec h4{
+    position: absolute;
+    top: 0;
+    
+}
+.nameSec h6{
+    position: absolute;
+    top: 33%;
+}
+.navigation{
+    position:absolute;
+    top: 30%;
+    width: 100%;
+    height:17%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: red;
+    box-shadow: 5px 5px 50px white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 30px;
+    font-family: Climate Crisis , sans-serif;
+    transition: all .4s ease-in-out;
+}
+.navigation a{
+    color: aquamarine;
+    text-decoration: none;
+}
+.navigation a:hover{
+    color: darkgrey;
+    transition: all .2s ease-in-out;
+}
+.socialSec{
+    position:absolute;
+    top: 46.7%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+    height: 7%;
+    background-color: darkgrey;
+    border: 2px solid red;
+    border-top: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 5px 5px 50px white;
+}
+.socialSec a{
+    color: white;
+}
+.socialSec a:hover{
+    color: black;
+    transition: all .2s ease-in-out;
+}
+#projeSection{
+    position: absolute;
+    top: 105vh;
+    width: 90%;
+    height: 90vh;
+    background-color: black;
+    opacity: .7;
+}
+.image{
+    border: 1px solid black;
+    width: 52%;
+    margin-left: 24%;
+    margin-top: 1%;
+    cursor: pointer;
+}
+.image:hover{
+    position: relative;
+    top: 70px;
+    scale: 1.9;
+    transition: all .7s cubic-bezier(0.5,1.6,0.4,0.7);
+    
+}
+
+.proje1{
+    border: 1px solid orange;
+    box-shadow: 5px 5px 50px orange inset;
+    width: 50%;
+    height: 50%;
+    float: right;   
+}
+.proje2{
+    border: 1px solid orange;
+    box-shadow: 5px 5px 50px orange inset;
+    width: 50%;
+    height: 50%;
+}
+.proje3{
+    border: 1px solid orange;
+    box-shadow: 5px 5px 50px orange inset;
+    width: 50%;
+    height: 50%;
+    float: right;
+}
+.proje4{
+    border: 1px solid orange;
+    box-shadow: 5px 5px 50px orange inset;
+    width: 50%;
+    height: 50%;
+}
+.buttonRow{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#projeSection h5{
+    text-align: center;
+    margin-top: 1%;
+    color: orange;
+}
+#projeSection p{
+    text-align: center;
+    margin-top: 1%;
+    color: orange;
+}
+.gobtn{
+    width: 120px;
+    border: 1px solid orange;
+    background-color: black;
+    color: white;
+}
+.gobtn:hover{
+    background-color: orange;
+    color: black;
+    transition: all .3s ease-in-out;
+}
+#contactSection{
+    position: absolute;
+    top: 205vh;
+    width: 90%;
+    height: 90vh;
+    background-color: black;
+    opacity: 0.7;
+    
+}
+.about{
+    position: absolute;
+    height: 90%;
+    width: 47.5%;
+    color:aqua;
+    padding: 25px 15px;
+    font-size: 1.6vw;
+    font-weight: 800;
+    font-family: "Genos";
+    text-align: center;
+    text-shadow: 5px 5px 50px aqua;
+}
+.form{
+    position: relative;
+    float: right;
+    height: 90%;
+    width: 47.5%;
+    padding: 10px;
+}
+.colum{
+    margin-left: 10%;
+    margin-top: 10%;
+}
+.form-label{
+    text-align: center;
+    color: aqua;
+}
+.btnColum{
+    width: 100%;
+    height: 50px;
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn{
+    color: black;
+}
+.btn:hover{
+    scale: 1.1;
+    transition: all .2s ease-in-out;
+}
+#btn{
+    position: absolute;
+    top: 288.5vh;
+    width: 170px;
+    height: 30px;
+    font-size: 20px;
+    border: red;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+}
+#btn:hover{
+    background-color: transparent;
+    color: aqua;
+    transition: all 0.2s ease-in;
+}
+
+
+@media (max-width:767px) {
+    .navigation{
+        font-size: 25px;
+    }
+    .about{
+        font-size: 2.6vw;
+    }
+    .btn{
+        scale: .8;
+    }
+    .btn:hover{
+        scale: 1;
+    }
+}
