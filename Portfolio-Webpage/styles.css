@@ -97,41 +97,41 @@
     width: 52%;
     margin-left: 24%;
     margin-top: 1%;
-    cursor: pointer;
-}
-.image:hover{
-    position: relative;
-    top: 70px;
-    scale: 1.9;
-    transition: all .7s cubic-bezier(0.5,1.6,0.4,0.7);
-    
 }
 
 .proje1{
     border: 1px solid orange;
-    box-shadow: 5px 5px 50px orange inset;
     width: 50%;
     height: 50%;
     float: right;   
 }
 .proje2{
     border: 1px solid orange;
-    box-shadow: 5px 5px 50px orange inset;
     width: 50%;
     height: 50%;
 }
 .proje3{
     border: 1px solid orange;
-    box-shadow: 5px 5px 50px orange inset;
     width: 50%;
     height: 50%;
     float: right;
 }
 .proje4{
     border: 1px solid orange;
-    box-shadow: 5px 5px 50px orange inset;
     width: 50%;
     height: 50%;
+}
+.proje1:hover{
+    box-shadow: 5px 5px 50px orange inset;
+}
+.proje2:hover{
+    box-shadow: 5px 5px 50px orange inset;
+}
+.proje3:hover{
+    box-shadow: 5px 5px 50px orange inset;
+}
+.proje4:hover{
+    box-shadow: 5px 5px 50px orange inset;
 }
 .buttonRow{
     width: 100%;

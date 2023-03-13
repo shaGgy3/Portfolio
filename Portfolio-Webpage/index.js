@@ -2,10 +2,9 @@
 const contactEl = document.querySelector("#contact")
 const projectEl = document.querySelector("#project")
 const buttonEl = document.querySelector("#btn")
-const imageEl = document.querySelector("image")
 
-project.addEventListener("click" , (event)=>{
-     window.scrollBy(0 , 700)
+projectEl.addEventListener("click" , (event)=>{
+     window.scrollBy(0 , 720)
 })
 contactEl.addEventListener("click" , (event)=>{
      window.scrollBy(0 , 1720)
@@ -13,3 +12,4 @@ contactEl.addEventListener("click" , (event)=>{
 buttonEl.addEventListener("click" , (event)=>{
      window.scrollBy(0 , -1720)
 })
+
