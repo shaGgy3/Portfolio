@@ -242,4 +242,7 @@
     .btn:hover{
         scale: 1;
     }
+    .gobtn{
+        width: 80px;
+    }
 }

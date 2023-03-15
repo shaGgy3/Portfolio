@@ -1,4 +1,5 @@
 
+
 const contactEl = document.querySelector("#contact")
 const projectEl = document.querySelector("#project")
 const buttonEl = document.querySelector("#btn")
@@ -12,4 +13,5 @@ contactEl.addEventListener("click" , (event)=>{
 buttonEl.addEventListener("click" , (event)=>{
      window.scrollBy(0 , -1720)
 })
+
 
