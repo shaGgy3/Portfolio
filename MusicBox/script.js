@@ -56,13 +56,19 @@ boxCover.addEventListener("click" , ()=>{
     })
     image5.addEventListener("click" , ()=>{
         image5.style.display = "none"
+        image8.style.display = "flex";
+        image8.style.width = "600px";
+    })
+
+    image8.addEventListener("click" , ()=>{
+        image8.style.display = "none"
         image9.style.display = "flex";
         image9.style.width = "600px";
     })
     image9.addEventListener("click" , ()=>{
         image9.style.display = "none"
-        image10.style.display = "flex";
-        image10.style.width = "600px";
+        image10.style.display = "flex"
+        image10.style.width = "600px"
     })
     image10.addEventListener("click" , ()=>{
         image10.style.display = "none"
