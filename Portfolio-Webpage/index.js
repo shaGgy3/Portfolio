@@ -14,4 +14,7 @@ buttonEl.addEventListener("click" , (event)=>{
      window.scrollBy(0 , -1720)
 })
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 37bfa572e642e6c51f4266cdf7808b8713f37d53

@@ -243,6 +243,10 @@
         scale: 1;
     }
     .gobtn{
+<<<<<<< HEAD
         width: 80px;
     }
+=======
+        width:80px;
+>>>>>>> 37bfa572e642e6c51f4266cdf7808b8713f37d53
 }
