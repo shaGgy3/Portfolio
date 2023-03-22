@@ -247,3 +247,10 @@
     }
 
 }
+@media (min-width:1440px) {
+    .image{
+        width: 30%;
+        margin-left: 35%;
+    }
+}
+
