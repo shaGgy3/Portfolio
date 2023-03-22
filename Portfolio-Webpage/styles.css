@@ -243,11 +243,11 @@
         scale: 1;
     }
     .gobtn{
-        width: 80px;
+        width: 60px;
     }
 
 }
-@media (min-width:1440px) {
+@media (max-width:1440px) {
     .image{
         width: 30%;
         margin-left: 35%;
